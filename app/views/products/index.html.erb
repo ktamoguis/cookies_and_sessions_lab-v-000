@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <% if session[:cart] %>
   <% session[:cart].each do |item| %>
     <p><%= item %></p>
@@ -10,3 +11,9 @@
 
   <input type="submit" value="add to cart">
 </form>
+=======
+<%= form_for @product do |f| %>
+  <%= f.text_field :product %>
+  <%= f.submit value='add to cart'%>
+<% end %>
+>>>>>>> 2a1ec9eba102eb1e4c04c471bf12263625404b77
